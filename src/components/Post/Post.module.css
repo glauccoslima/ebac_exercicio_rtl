@@ -1,60 +1,144 @@
+/* Estilo principal do post */
 .post {
     background-color: #fff;
+    /* Cor de fundo branca */
     padding: 16px;
-    box-shadow: 1px 2px 6px #333;
+    /* Espaçamento interno */
+    box-shadow: 0px 2px 8px rgba(51, 51, 51, 0.2);
+    /* Sombra leve para dar destaque */
     border-radius: 16px;
+    /* Borda arredondada */
+    transition: box-shadow 0.3s ease;
+    /* Suavização na transição de sombra */
 }
 
+/* Efeito de hover no post para dar destaque */
+.post:hover {
+    box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.3);
+    /* Sombra mais intensa */
+}
+
+/* Estilo da imagem do post */
 .post-image {
     max-width: 100%;
+    /* Garante que a imagem não ultrapasse o tamanho do container */
     display: block;
+    /* A imagem é exibida como um bloco */
+    border-radius: 8px;
+    /* Borda arredondada da imagem */
+    transition: transform 0.3s;
+    /* Suavização no efeito de transformação (zoom) */
 }
 
+/* Efeito de zoom na imagem */
+.zoomed {
+    transform: scale(1.5);
+    /* Amplia a imagem */
+}
+
+/* Estilo do texto do post e do textarea dos comentários */
 .post-text,
 .post-comments-form-textarea {
     color: #333;
+    /* Cor do texto */
     font-size: 14px;
+    /* Tamanho da fonte */
     line-height: 22px;
+    /* Espaçamento entre linhas */
     margin-bottom: 24px;
+    /* Espaçamento inferior */
 }
 
+/* Estilo do container dos comentários */
 .post-comments {
-    
+    margin: 10px 0;
+    /* Espaçamento acima e abaixo */
 }
 
+/* Estilo individual de cada comentário */
 .post-comment {
     color: #444;
+    /* Cor do texto do comentário */
     font-size: 12px;
+    /* Tamanho da fonte */
     line-height: 20px;
+    /* Espaçamento entre linhas */
     background-color: #ffff9f;
+    /* Cor de fundo do comentário */
     padding: 8px 16px;
+    /* Espaçamento interno */
     border-radius: 8px;
+    /* Borda arredondada */
     margin-bottom: 8px;
+    /* Espaçamento inferior */
+    transition: background-color 0.3s ease;
+    /* Suavização na transição de cor de fundo */
 }
 
+/* Efeito de hover no comentário */
+.post-comment:hover {
+    background-color: #fffbcc;
+    /* Cor de fundo mais clara no hover */
+}
+
+/* Estilo para o conteúdo do comentário */
 .post-comment-content {
     font-style: italic;
+    /* Texto em itálico */
 }
 
+/* Estilo do formulário de comentários */
 .post-comments-form {
     margin-top: 16px;
+    /* Espaçamento acima */
     text-align: right;
+    /* Alinha o conteúdo à direita */
 }
 
+/* Estilo da área de texto do formulário de comentários */
 .post-comments-form-textarea {
     display: block;
+    /* Exibido como um bloco */
     resize: none;
+    /* Desabilita redimensionamento */
     width: 100%;
+    /* Ocupa toda a largura disponível */
     margin-bottom: 8px;
+    /* Espaçamento inferior */
     padding: 8px 16px;
+    /* Espaçamento interno */
+    border: 1px solid #ccc;
+    /* Borda cinza claro */
+    border-radius: 8px;
+    /* Borda arredondada */
+    transition: border-color 0.3s ease;
+    /* Suavização na transição da cor da borda */
 }
 
+/* Estilo da área de texto quando focada */
+.post-comments-form-textarea:focus {
+    border-color: #27ae60;
+    /* Cor da borda verde */
+    outline: none;
+    /* Remove destaque padrão */
+}
+
+/* Estilo do botão de enviar comentário */
 .post-comments-form-button {
     padding: 8px 16px;
+    /* Espaçamento interno */
     font-weight: bold;
+    /* Texto em negrito */
     border-radius: 8px;
+    /* Borda arredondada */
     border: none;
+    /* Sem borda */
     background-color: #27ae60;
+    /* Cor de fundo verde */
     color: #eee;
+    /* Cor do texto cinza claro */
     cursor: pointer;
+    /* Cursor muda para "mãozinha" */
+    transition: background-color 0.3s ease;
+    /* Suavização na transição de cor de fundo */
 }

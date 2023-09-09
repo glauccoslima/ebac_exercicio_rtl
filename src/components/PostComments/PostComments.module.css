@@ -1,47 +1,91 @@
+/* Estilos para a área de comentários do post */
+
+/* Define o estilo da área de texto onde os comentários são inseridos */
 .post-comments-form-textarea {
     color: #333;
+    /* Cor do texto */
     font-size: 14px;
+    /* Tamanho da fonte */
     line-height: 22px;
+    /* Espaçamento entre linhas do texto */
     margin-bottom: 24px;
+    /* Espaçamento abaixo da área de texto */
 }
 
+/* Define o estilo da lista de comentários */
 .post-comments {
-    
+    margin: 10px 0;
+    /* Espaçamento acima e abaixo da lista de comentários */
 }
 
+/* Define o estilo individual de cada comentário */
 .post-comment {
     color: #444;
+    /* Cor do texto do comentário */
     font-size: 12px;
+    /* Tamanho da fonte */
     line-height: 20px;
+    /* Espaçamento entre linhas do texto */
     background-color: #ffff9f;
+    /* Cor de fundo do comentário */
     padding: 8px 16px;
+    /* Espaçamento interno do comentário */
     border-radius: 8px;
+    /* Bordas arredondadas */
     margin-bottom: 8px;
+    /* Espaçamento abaixo de cada comentário */
 }
 
+/* Estilização específica para o conteúdo do comentário */
 .post-comment-content {
     font-style: italic;
+    /* Estilo do texto em itálico */
 }
 
+/* Estilo para o formulário de adição de novos comentários */
 .post-comments-form {
     margin-top: 16px;
+    /* Espaçamento acima do formulário */
     text-align: right;
+    /* Alinha o conteúdo à direita */
 }
 
+/* Estilo para a área de texto dentro do formulário */
 .post-comments-form-textarea {
     display: block;
+    /* Faz com que ocupe toda a largura disponível */
     resize: none;
+    /* Desabilita o redimensionamento */
     width: 100%;
+    /* Define a largura como 100% */
     margin-bottom: 8px;
+    /* Espaçamento abaixo da área de texto */
     padding: 8px 16px;
+    /* Espaçamento interno da área de texto */
 }
 
+/* Estilo para o botão de envio de comentário */
 .post-comments-form-button {
     padding: 8px 16px;
+    /* Espaçamento interno do botão */
     font-weight: bold;
+    /* Texto em negrito */
     border-radius: 8px;
+    /* Bordas arredondadas */
     border: none;
+    /* Sem borda */
     background-color: #27ae60;
+    /* Cor de fundo do botão */
     color: #eee;
+    /* Cor do texto do botão */
     cursor: pointer;
+    /* Cursor em forma de mão ao passar por cima */
+    transition: background-color 0.3s ease;
+    /* Transição suave da cor de fundo */
+}
+
+/* Estilo quando o cursor está sobre o botão de envio */
+.post-comments-form-button:hover {
+    background-color: #000000;
+    /* Cor de fundo ao passar o cursor */
 }

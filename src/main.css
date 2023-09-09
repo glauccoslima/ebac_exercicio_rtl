@@ -1,11 +1,19 @@
+/* Reset geral para remover margens, paddings, estilos de lista e definir o tipo de box-sizing */
 * {
     margin: 0;
+    /* Remove todas as margens padrão */
     padding: 0;
+    /* Remove todos os paddings padrão */
     box-sizing: border-box;
+    /* Garante que padding e border são incluídos na largura/altura total do elemento */
     list-style: none;
+    /* Remove estilos de lista (por exemplo, marcadores de lista) */
     font-family: Roboto, Helvetica, sans-serif;
+    /* Define a família de fontes padrão */
 }
 
+/* Estilização para o corpo da página */
 body {
     background-color: #eee;
+    /* Define a cor de fundo do corpo do documento */
 }

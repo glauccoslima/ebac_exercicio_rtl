@@ -1,4 +1,8 @@
+/* Define os estilos para o componente principal (App) */
 .app {
+    /* Define a largura máxima do componente */
     max-width: 480px;
+
+    /* Centraliza o componente na vertical e horizontal e dá um espaçamento na parte superior e inferior */
     margin: 120px auto;
 }
